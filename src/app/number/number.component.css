@@ -1,0 +1,9 @@
+.number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div div {
+  margin: 10px 10px 10px 0;
+}

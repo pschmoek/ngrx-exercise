@@ -1,0 +1,24 @@
+form div {
+  margin: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 5em;
+}
+
+form {
+  display: inline-block;
+  border: 2px solid #ededed;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+form div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}

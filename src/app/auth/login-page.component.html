@@ -1,0 +1,21 @@
+<div class="form-container">
+
+  <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit(loginForm.value)" novalidate>
+
+    <div>
+      <label for="user">Username</label>
+      <input type="text" name="user" formControlName="user">
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" formControlName="password">
+    </div>
+
+    <div>
+      <button type="submit">Login</button>
+    </div>
+    
+  </form>
+
+</div>

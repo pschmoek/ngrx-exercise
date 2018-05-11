@@ -1,5 +1,7 @@
-<button (click)="onIncrementClick()">Increment</button>
-<div>Current Number: {{ numberValue$ | async }}</div>
-<button (click)="onDecrementClick()">Decrement</button>
+<div class="header-row">
+  <p *ngIf="canLogout$ | async">{{ currentUser$ | async }}</p>
+  <button type="button" *ngIf="canLogout$ | async" (click)="onLogoutClick()">Logout</button>
+</div>
 
-<button (click)="onResetClick()">Reset Counter</button>
+<app-login-page *ngIf="showLoginPage$ | async"></app-login-page>
+<app-number *ngIf="showNumber$ | async"></app-number>
